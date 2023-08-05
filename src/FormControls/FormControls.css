@@ -1,0 +1,26 @@
+.card__placeholder {
+  height: 400px;
+  width: 350px;
+  margin-top:10px;
+  animation: Card_loading 1s linear   ;
+}
+.card{
+  opacity: 1;
+}
+
+.full-screen-div {
+  height: 100vh;
+  width: 100vw;
+}
+
+
+@keyframes Card_loading {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
